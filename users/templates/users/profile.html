@@ -1,0 +1,5 @@
+{% load static %}
+
+
+<h1>{{ user.username }}</h1>
+<img src='{{ user.profilemodel.image.url | default:' /pictures/profilepic.jpg' }}' alt="Image" width="100px">
